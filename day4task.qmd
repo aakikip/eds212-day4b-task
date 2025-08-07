@@ -1,0 +1,72 @@
+---
+title: "r-exploration"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+```
+
+```{r}
+library(GGally)
+
+```
+
+```{r}
+view(diamonds)
+
+```
+
+```{r}
+names(diamonds)
+```
+
+```{r}
+dim(diamonds)
+```
+
+```{r}
+summary(diamonds)
+```
+
+```{r}
+head(diamonds)
+```
+
+```{r}
+tail(diamonds)
+```
+
+```{r}
+skimr::skim(diamonds)
+```
+
+```{r}
+GGally::ggpairs(diamonds)
+```
+
+```{r}
+diamonds$color
+
+
+```
+
+```{r}
+ggplot(data = diamonds, aes(x = carat, y = price)) + geom_jitter() #aes for the aesthetics, what we put in the visual representation, function in Y-axis always, always vertical
+```
+
+```{r}
+ggplot(data = diamonds, aes(x = carat)) + geom_histogram()
+```
+
+```{r}
+ggplot(data = diamonds, aes(x = clarity)) + geom_boxplot()
+```
+
+```{r}
+
+```
